@@ -1,0 +1,55 @@
+<!DOCTYPE>
+ <html>
+ 
+	<header>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="autocompleteCss.css">
+		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+		
+	</header>
+	
+	<body>
+	</br>
+	<div class="row">
+		<div class="col-xs-6 col-md-4">
+			<form class="form-inline">
+				<div class="form-group">
+					<input type="text" class="form-control" id="js-search" placeholder="Recherche">
+					<button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-zoom-in"></i></button>
+				</div>
+			</div>
+		</div>
+	</div>
+  </body>
+  <script>
+      var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $("#js-search").autocomplete({
+      source: availableTags
+    });
+  
+  </script>
+ </html>
